@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+:root {
+    --color-blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --color-gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    /* min-width: 375px; */
+}
+.logo {
+    width: 3rem;
+    margin: 1rem;
+}
+.heading {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+.thin-text {
+    font-weight: 300;
+    color: darkgray;
+}
+.notify {
+    font-size: .75rem
+}
+.subscribe-form {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+.email {
+    width: 100%;
+    border-radius: 30px;
+    padding: .4rem 1.3rem;
+    border-style: none;
+    border: 2px solid var(--pale-blue);
+    width: 100%;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+.subscribe {
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: .7rem;
+    margin: .5rem 0;
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: var(--color-blue);
+    color: var(--pale-blue);
+    cursor: pointer;
+}
+.dashboard {
+    max-width: 600px;
+}
+.copyright {
+    font-size: .75rem
+}
+.attribution {
+    font-size: 11px; text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: translateX(15%);
+}
+.attribution a { color: hsl(228, 45%, 44%); }

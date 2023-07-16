@@ -7,22 +7,29 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+  <main class="main-content">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="Logo">
+    </div>
+    <h1 class="heading"><span class="thin-text">We are launching</span> soon!</h1>
+    <p class="notify">Subscribe and get notified</p>
+    
+    <div class="subscribe-form">
+      <form action="/">
+        <div class="input-field"><input type="email" id="email" class="email" placeholder="Your email address..."></div>
+        <button type="submit" class="subscribe">Notify Me</button>
+      </form>
+    </div>
+    <div class="dashboard"><img src="./images/illustration-dashboard.png" alt="Dashboard"></div>
+    <div class="social-buttons"></div>
+    <div class="copyright">&copy; Copyright Ping. All rights reserved.</div>
+  </main>
 
   <footer>
     <p class="attribution">
