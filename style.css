@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 1rem;
     /* min-width: 375px; */
 }
@@ -31,7 +32,7 @@ body {
 }
 .heading {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 1rem;
 }
 .thin-text {
@@ -39,42 +40,93 @@ body {
     color: darkgray;
 }
 .notify {
-    font-size: .75rem
+    font-size: 1rem
 }
+
 .subscribe-form {
     /* border: 1px solid red; */
+    display: flex;  
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 520px;
+    /* position: relative; */
+}
+.subscribe-form form {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 1rem;
-    padding: 1rem;
     width: 100%;
 }
 .email {
     width: 100%;
     border-radius: 30px;
-    padding: .4rem 1.3rem;
-    border-style: none;
-    border: 2px solid var(--pale-blue);
+    padding: .7rem 1.5rem;
+    border: 1px solid var(--pale-blue);
     width: 100%;
     border-radius: 30px;
-    font-size: 1rem;
+    font-size: .75rem;
+    color: var(--color-gray);
+    outline: none;
+    
+}
+
+.input-field {
+    width: 100%;
+    margin: .5rem .5rem;
+    flex-grow: 1;
+    position: relative;
+}
+
+.input-field.error input {
+    border-color: var(--light-red);
+}
+.input-field.error .error-text {
+    color: var(--light-red);
+    position: absolute;
+    width: 100%;
+    bottom: -40px;
+    left: 10px;
+    font-size: .75rem;
+    margin-bottom: 1.5rem;
+}
+.input-field.success input {
+    border-color: var(--pale-blue);
 }
 .subscribe {
     width: 100%;
     border-radius: 30px;
     border: none;
     padding: .7rem;
-    margin: .5rem 0;
+    margin: .5rem;
     font-size: .8rem;
     font-weight: 600;
     background-color: var(--color-blue);
-    color: var(--pale-blue);
+    color: #fff;
     cursor: pointer;
+    flex-shrink: 2;
+}
+.subscribe:hover {
+    background-color: var(--color-blue);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.422);
 }
 .dashboard {
     max-width: 600px;
+}
+.social-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem;
+}
+.fa-brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: .5rem;
+    border: 1px solid var(--pale-blue);
+    border-radius: 50%;
+    color: var(--color-blue);
 }
 .copyright {
     font-size: .75rem
@@ -88,3 +140,13 @@ body {
     transform: translateX(15%);
 }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 640px) {
+    .subscribe-form form {
+        flex-wrap: nowrap;
+    }
+    .heading {
+        font-size: 2rem;
+    }
+ 
+}
